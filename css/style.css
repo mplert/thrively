@@ -9,35 +9,45 @@
 /*complementary light: rgb(225, 208, 208)*/
 /*cream light: rgb(254, 254, 236)*/
 
-
 body {
     font-family: 'Comfortaa', cursive;
-    background: linear-gradient(rgb(236, 136, 109), rgb(255, 204, 189));
+    /*background: rbg(255, 255, 255);*/
+    /*background: linear-gradient(rgb(236, 136, 109), rgb(255, 204, 189));*/
     /*background: rgb(239, 152, 121);*/
     /*background: rgb(245, 180, 156);*/
-    /*background: rgb(246, 248, 240);*/
+    background: rgb(246, 248, 240);
     /*margin: 20px;*/
 }
-
 div.header {
-    margin-top: 40px;
+    margin-top: 50px;
 }
-
+div.content {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 h1.logo-head {
     font-size: 85px;
     color: rgb(52, 48, 65);
     font-weight: bolder;
     margin-left: 30px;
     margin-top: 50px;
-    /*margin-right: 30px;*/
     text-align: right;
     text-shadow: 0.7px 0.7px rgb(234, 236, 228);
 }
-
+h1.header-txt {
+    font-size: 60x;
+    color: rgb(52, 48, 65);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.normal {
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Ubuntu', sans-serif;*/
+    font-weight: 100;
+    /*font-size: 25px;*/
+}
 .logo-sub {
-    /*font-style: italic;*/
     font-size: 25px;
-    /*color: rgb(246, 248, 240);*/
     color: rgb(254, 254, 236);
     font-weight: 200;
     margin-left: 50px;
@@ -45,13 +55,10 @@ h1.logo-head {
     text-shadow: 0.5px 0.5px rgb(52, 48, 65);
     margin-bottom: 30px;
 }
-
 img.logo-img {
-    height: 150px;
+    height: 60px;
     width: auto;
-    margin-top: 40px;
 }
-
 img.img-phone {
     height: 500px;
     width: auto;
@@ -60,7 +67,6 @@ img.img-phone {
     margin-top: 20px;
     margin-bottom: 30px;
 }
-
 .box1 {
     background: rgba(243, 227, 220, 0.8);
     padding-right: 25px;
@@ -71,50 +77,483 @@ img.img-phone {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 .box-ender {
-    background: linear-gradient(rgba(139, 66, 69, 1), rgb(166, 79, 82));
+    /*background: linear-gradient(rgba(139, 66, 69, 1), rgb(166, 79, 82));*/
+    background: rgba(245, 180, 156, 0.5);
 }
-
 .content-txt {
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px;
     color: rgb(52, 48, 65);
-    /*text-shadow: 0.5px 0.5px rgb(52, 48, 65);*/
     text-align: center;
     font-weight: 200;
 }
-
 .ender-txt {
     font-size: 15px;
-    font-family: 'Ubuntu', sans-serif;
+    /*font-family: 'Ubuntu', sans-serif;*/
     padding-left: 10px;
     padding-right: 10px;
-    color: rgb(254, 254, 236);
-    text-shadow: 0.5px 0.5px rgb(52, 48, 65);
+    color: rgb(52, 48, 65);
     text-align: center;
 }
-
+h3.ender-txt {
+    padding-top:20px;
+}
 .bold {
     font-weight: 800;
 }
-
 .big {
     font-size: 22px;
     margin-bottom: 20px;
     text-shadow: 0.5px 0.5px rgb(246, 248, 240);
 }
-
 .icon {
-    color: rgb(254, 254, 236);
-    text-shadow: 0.5px 0.5px rgb(52, 48, 65);
+    color: rgb(52, 48, 65);
+}
+.fa-facebook:hover , .fa-medium-m:hover , .fa-envelope:hover , .fa-twitter:hover , .fa-linkedin:hover   {
+    color: rgb(166, 79, 82);
+    text-shadow: 0.5px 0.5px rgb(85, 31, 41);
+}
+.center {
+    text-align: center;
+}
+.icon-row {
+    padding-top: 20px;
+}
+.address {
+    color: rgb(52, 48, 65);
+    font-weight: 300;
+    font-size: 12px;
 }
 
-.icon-border {
+/*MAIN PAGE*/
+#main-page {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 5px;
+    color: #34495E;
+    padding-left: 6%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+    padding-top: 15%;
+    line-height: 150%;
+}
+#main-page:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url("bgimage/test.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* MAIN PAGE: about us section*/
+img.partner-img {
+    height: 50px;
+    width: auto;
+    margin: 15px;
+}
+#sponsor-page {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: rgb(234, 236, 228);
+}
+#aboutus-page {
+    padding-top:50px;
+    margin-top:20px;
+    padding-bottom:50px;
+    margin-bottom:20px;
+}
+img#mtc {
+    height: 120px;
+    width: auto;
+}
+img#ycschool {
+    height: 100px;
+    width: auto;
+}
+img#yseali {
+    height:130px;
+    width: auto
+}
+img#ilab , img#legatum {
+    height: 70px;
+    width: auto;
+}
+img#wappp , img#ideas {
+    width: 290px;
+    height:auto;
+}
+h2#sponsor-header {
+    letter-spacing: 3px;
+}
+h4.about-text {
+    line-height: 180%;
+    font-size: 18px;
+}
+img.about-photos {
+    height: 200px;
+    width: auto;
+    margin: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.subhead-text {
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom:15px;
+    font-family: 'Roboto', sans-serif;
+}
+.highlight {
+    font-weight: 300;
+    color: rgb(52, 48, 65);
+}
+
+/*TEAM PAGE*/
+#team-intro {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 5px;
+    color: #34495E;
+    padding-left: 6%;
+    padding-right: 5%;
+    padding-bottom: 8%;
+    padding-top: 15%;
+    line-height: 150%;
+}
+#team-intro:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.15;
+    background-image: url("bgimage/maesot1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#team-content {
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
+    margin-top: 10px;
+    /*margin-bottom:30px;*/
+    text-align: center;
+}
+h2.team-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+h3.team-title{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.team-bio {
+    font-size: 15px;
+    font-weight:200;
+}
+.col-left {
+    padding-right: 40px;
+}
+.col-right {
     padding-left: 20px;
 }
-
-div.center {
+#team-subheader {
+    line-height: 200%
+}
+.team-photo {
+    height: 190px;
+    width: auto;
+    /*padding: 20px;*/
+}
+.team-name , .team-title {
     text-align: center;
+}
+#team-header{
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.team-names {
+    background: rgb(234, 236, 228);
+    padding-top: 5%;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.list-values {
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+    font-size: 20px;
+    text-align: left;
+}
+.list {
+    padding-top: 30px; padding-bottom: 20%;
+}
+#team-value {
+    padding-top: 30px;
+}
+#team-row1 {
+    align-content: center;
+}
+.value-highlight {
+    font-size: 25px;
+    font-weight: 300;
+    /*font-family: 'Roboto', sans-serif;*/
+    letter-spacing: 2px;
+}
+#value1:hover , #value2:hover , #value3:hover {
+    color: rgb(139, 66, 69);
+}
+.bio-icon {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+/*CONTACT PAGE*/
+h2#contact-header {
+    letter-spacing: 3px;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    margin-top: 20px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+#connect-header {
+    font-weight: 600;
+}
+#contact-main {
+    /*margin-top: 50px;*/
+    margin-bottom: 30px;
+}
+#contact-intro-page {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 5px;
+    color: #34495E;
+    padding-left: 6%;
+    padding-right: 8%;
+    padding-bottom: 15%;
+    padding-top: 20%;
+    line-height: 150%;
+}
+#contact-intro-page:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.25;
+    background-image: url("bgimage/maesot3.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#contact-main-page {
+    padding: 50px;
+}
+.contact-text {
+    line-height: 150%;
+}
+
+
+/*PRODUCT PAGE*/
+#product-intro {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 5px;
+    color: #34495E;
+    padding-left: 6%;
+    padding-right: 8%;
+    padding-bottom: 15%;
+    padding-top: 20%;
+    line-height: 150%;
+}
+#product-intro:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.25;
+    background-image: url("bgimage/field2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#project-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.project-photo {
+    height: auto;
+    width: 500px;
+    margin: 20px;
+}
+#project-mobile {
+    height: 400px;
+    width: auto;
+    float: left;
+}
+#project-group {
+    width: 350px;
+    height: auto;
+}
+.project-description {
+    margin-top: 30px; margin-bottom: 30px;
+    margin-left: 50px; margin-right: 30px;
+    padding-left: 40%;
+}
+.momo-txt {
+    line-height: 180%;
+    text-align: left;
+
+}
+
+/*Photo Captions*/
+.photo-container {
+    position: relative;
+    width: 50%;
+}
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #eaece4;
+}
+.project-container:hover .photo-overlay {
+    opacity: 0.5;
+}
+.photo-caption {
+    color: dimgrey;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+/*Navigation Menu*/
+nav.navbar-findcond {
+    background: rgba(245, 180, 156, 0.7);
+    border-color: none;
+    box-shadow: 0 0 2px 0 none;
+}
+nav.navbar-findcond a {
+    color: rgb(52, 48, 65);
+    font-weight: 500;
+}
+nav.navbar-findcond ul.navbar-nav a {
+    color: #312f31;
+}
+nav.navbar-findcond ul.navbar-nav a:hover,
+nav.navbar-findcond ul.navbar-nav a:visited,
+nav.navbar-findcond ul.navbar-nav a:focus,
+nav.navbar-findcond ul.navbar-nav a:active {
+    background: rgba(255, 255, 255, 0.5);
+}
+nav.navbar-findcond ul.navbar-nav a:hover {
+    border-color: none;
+}
+nav.navbar-findcond li.divider {
+    background: #ccc;
+}
+nav.navbar-findcond button.navbar-toggle {
+    background: #555;
+    border-radius: 2px;
+}
+nav.navbar-findcond button.navbar-toggle:hover {
+    background: #999;
+}
+nav.navbar-findcond button.navbar-toggle > span.icon-bar {
+    background: #fff;
+}
+nav.navbar-findcond ul.dropdown-menu {
+    border: 0;
+    background: rgba(255, 235, 228, 1);
+    border-radius: 4px;
+    margin: 4px 0;
+}
+nav.navbar-findcond ul.dropdown-menu > li > a {
+    color: #444;
+}
+nav.navbar-findcond ul.dropdown-menu > li > a:hover {
+    background: rgba(255, 204, 189, 0.8);
+    color: #444;
+}
+nav.navbar-findcond span.badge {
+    background: #555;
+    font-weight: normal;
+    font-size: 11px;
+    margin: 0 4px;
+}
+nav.navbar-findcond span.badge.new {
+    background: #555;
+    color: #fff;
+}
+a.nav-list {
+    font-weight:200;
+}
+img.navbar-logo {
+    height: 32px;
+    width: auto;
 }
