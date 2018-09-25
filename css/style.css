@@ -22,8 +22,8 @@ div.header {
     margin-top: 50px;
 }
 div.content {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
 }
 h1.logo-head {
     font-size: 85px;
@@ -126,6 +126,9 @@ h3.ender-txt {
     font-weight: 300;
     font-size: 12px;
 }
+#ender-logo:hover {
+    color: rgb(85, 31, 41);
+}
 
 /*MAIN PAGE*/
 #main-page {
@@ -138,8 +141,8 @@ h3.ender-txt {
     color: #34495E;
     padding-left: 6%;
     padding-right: 5%;
-    padding-bottom: 15%;
-    padding-top: 15%;
+    padding-bottom: 20%;
+    padding-top: 20%;
     line-height: 150%;
 }
 #main-page:before{
@@ -167,14 +170,14 @@ img.partner-img {
 }
 #sponsor-page {
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     background: rgb(234, 236, 228);
 }
 #aboutus-page {
-    padding-top:50px;
+    /*padding-top:30px;*/
     margin-top:20px;
     padding-bottom:50px;
-    margin-bottom:20px;
+    margin-bottom:40px;
 }
 img#mtc {
     height: 120px;
@@ -197,14 +200,16 @@ img#wappp , img#ideas {
     height:auto;
 }
 h2#sponsor-header {
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    margin-top:40px; margin-bottom: 40px;
+    text-align: center;
 }
 h4.about-text {
     line-height: 180%;
     font-size: 18px;
 }
 img.about-photos {
-    height: 200px;
+    height: 190px;
     width: auto;
     margin: 2px;
     margin-top: 4px;
@@ -220,6 +225,21 @@ img.about-photos {
 .highlight {
     font-weight: 300;
     color: rgb(52, 48, 65);
+}
+h2.subhead-highlight{
+    line-height:180%;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+h2.subhead-highlight:hover{
+    color: rgb(85, 31, 41);
+}
+
+#aboutus-title{
+    margin: 30px;
+    padding-top: 30px;
 }
 
 /*TEAM PAGE*/
@@ -414,7 +434,7 @@ p {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.25;
+    opacity: 0.2;
     background-image: url("bgimage/field2.jpg");
     background-size: cover;
     background-position: center;
